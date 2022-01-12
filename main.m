@@ -44,14 +44,51 @@ image9 = MySegmentationFunction(image{9});
 image10 = MySegmentationFunction(image{10});
 
 figure(1)
-subplot(2,2,1)
+subplot(4,5,1)
+imshow(image{1});
+title('Input image')
+subplot(4,5,2)
 imshow(image1.background);
-subplot(2,2,2)
+title('Background')
+subplot(4,5,3)
+imshow(image1.CF);
+title('Cerebrospinal fluid')
+subplot(4,5,4)
+imshow(image1.WM);
+title('White Matter')
+subplot(4,5,5)
+imshow(image1.GM);
+title('Grey Matter')
+subplot(4,5,6)
+imshow(image{2});
+subplot(4,5,7)
 imshow(image2.background);
-subplot(2,2,3)
+subplot(4,5,8)
+imshow(image2.CF);
+subplot(4,5,9)
+imshow(image2.WM);
+subplot(4,5,10)
+imshow(image2.GM);
+subplot(4,5,11)
+imshow(image{3});
+subplot(4,5,12)
 imshow(image3.background);
-subplot(2,2,4)
+subplot(4,5,13)
+imshow(image3.CF);
+subplot(4,5,14)
+imshow(image3.WM);
+subplot(4,5,15)
+imshow(image3.BM);
+subplot(4,5,16)
+imshow(image{4});
+subplot(4,5,17)
 imshow(image4.background);
+subplot(4,5,18)
+imshow(image4.CF);
+subplot(4,5,19)
+imshow(image4.WM);
+subplot(4,5,20)
+imshow(image4.GM);
 
 figure(2)
 subplot(2,2,1)
@@ -68,4 +105,3 @@ subplot(2,2,2)
 imshow(image9.background);
 subplot(2,2,3)
 imshow(image10.background);
-
